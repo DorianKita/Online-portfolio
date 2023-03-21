@@ -1,16 +1,22 @@
 body {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 1200px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 nav {
-    margin: 10px 50px;
+    padding-top: 20px;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
 }
 
 .nav-bar {
+    padding-right: 50px;
+    text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -35,27 +41,40 @@ a:active {
 }
 
 .logo {
-    height: 100px;
+    padding-left: 50px;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
 .main {
+    padding-top: 200px;
     justify-content: center;
     display: flex;
-    position: relative;
     flex-wrap: wrap;
 }
 
 .main-info {
     display: flex;
+    flex-direction: column;
     width: 600px;
     height: 500px;
-    background-color: #2a4d32;
+    background-color: #74fdfb;
+}
+
+.main-info p {
+    margin: 30px 0 0 50px;
 }
 
 .avatar {
     width: 600px;
     height: 500px;
-    background-color: rgb(25, 74, 118);
+
+}
+
+.avatar img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .my-photo {
@@ -66,17 +85,30 @@ a:active {
 
 p {
     width: 300px;
-    position: absolute;
     color: white;
-    bottom: 90px;
-    left: 7%;
+    display: inline-block;
 }
 
-.about-me {
+.about-me-button {
     font-size: 25px;
     color: cadetblue;
 }
 
+
+.about-section {
+    height: 300vh;
+    background-color: #dddddd;
+}
+
 .about-me:hover {
-    color: cadetblue;
+    color: rgb(109, 236, 241);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: aquamarine;
+    margin-top: 70px;
+    justify-content: center;
 }

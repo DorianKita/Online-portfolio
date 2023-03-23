@@ -6,6 +6,7 @@ body {
 }
 
 nav {
+    z-index: 1;
     padding-top: 20px;
     width: 1200px;
     margin: 0 auto;
@@ -104,22 +105,25 @@ a:active {
 
 
 #about-me {
-    height: 700px;
+    min-height: 700px;
+    padding-top: 50px;
+    margin-bottom: -100px;
     /* background-color: #dddddd; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 .about-me-info {
     width: 600px;
-    height: 700px;
-    /* background-color: red; */
+    min-height: 700px;
+    padding-top: 50px;
+    background-color: red;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .about-me-info p {
@@ -131,34 +135,71 @@ a:active {
 
 .second {
     width: 600px;
-    height: 700px;
+    min-height: 750px;
     background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     flex-wrap: wrap;
+
+}
+
+.second p {
+    position: absolute;
+    bottom: 50px;
 }
 
 .second h2 {
     margin-bottom: 100px;
     position: absolute;
-    top: 20px;
+    top: 120px;
 }
 
-.projects img {
+.logo-in-projects {
+    width: 200px;
+    height: 120px;
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 340px;
+    left: 70px;
 }
 
+.github-in-projects {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 250px;
+    left: 280px;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact div {
+
+    /* background-color: red; */
+    margin: 100px 10px;
+
+}
+
+.contact-me-github-logo img {
+    width: 100px;
+    height: 50px;
+}
 
 footer {
     display: flex;
     align-items: center;
     height: 50px;
     background-color: aquamarine;
-    margin-top: 70px;
+    margin-top: 120px;
     justify-content: center;
 }

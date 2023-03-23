@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
 }
 
 nav {
@@ -57,12 +58,22 @@ a:active {
     display: flex;
     flex-direction: column;
     width: 600px;
-    height: 500px;
-    background-color: #74fdfb;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    line-height: 60px;
+}
+
+.main-info h3 {
+    font-size: 40px;
+    top: 20px;
 }
 
 .main-info p {
+    padding-bottom: 40px;
     margin: 30px 0 0 50px;
+    font-size: 30px;
 }
 
 .avatar {
@@ -78,16 +89,13 @@ a:active {
 }
 
 .my-photo {
-    margin: 30px 0 0 50px;
+    margin: 60px 0 0 40px;
     width: 250px;
     height: 250px;
+    border-radius: 50%;
 }
 
-p {
-    width: 300px;
-    color: white;
-    display: inline-block;
-}
+
 
 .about-me-button {
     font-size: 25px;
@@ -95,14 +103,56 @@ p {
 }
 
 
-.about-section {
-    height: 300vh;
-    background-color: #dddddd;
+#about-me {
+    height: 700px;
+    /* background-color: #dddddd; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.about-me:hover {
-    color: rgb(109, 236, 241);
+.about-me-info {
+    width: 600px;
+    height: 700px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+.about-me-info p {
+
+    font-size: 20px;
+    padding: 30px;
+    /* color: #fff; */
+}
+
+.second {
+    width: 600px;
+    height: 700px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.second h2 {
+    margin-bottom: 100px;
+    position: absolute;
+    top: 20px;
+}
+
+.projects img {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
 
 footer {
     display: flex;
